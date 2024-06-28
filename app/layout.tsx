@@ -1,5 +1,4 @@
-import Header from '../app/components/Header'
-import Footer from '../app/components/Footer'
+import '../app/styles/globals.css'
 
 export default function RootLayout({
   children,
@@ -9,9 +8,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <div className="container">
+          {children}
+        </div>
       </body>
     </html>
   )
